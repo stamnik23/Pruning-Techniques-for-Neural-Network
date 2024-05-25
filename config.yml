@@ -1,0 +1,17 @@
+experimentName: LSTMOptimization
+trialConcurrency: 1
+maxTrialNumber: 1
+searchSpaceFile: search_space.json
+tuner:
+  name: TPE
+  classArgs:
+    optimize_mode: minimize
+assessor:
+  name: Medianstop
+  classArgs:
+    optimize_mode: minimize
+trialCommand: python3 lstm_reg.py
+trialCodeDirectory: .
+trialGpuNumber: 0
+trainingService:
+  platform: local

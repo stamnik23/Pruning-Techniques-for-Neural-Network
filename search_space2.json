@@ -1,0 +1,16 @@
+{
+  "learning_rate": {
+    "_type": "choice",
+    "_value": [0.001]
+  },
+  "batch_size": {
+    "_type": "choice",
+    "_value": [32]
+  },
+  "latent_dim": {
+    "_type": "choice",
+    "_value": [32, 64, 128]
+  },
+  "pruning_method": {"_type": "choice", "_value": ["constant", "polynomial", "l1_regularization", "l2_regularization"]}
+
+}

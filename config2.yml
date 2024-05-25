@@ -1,0 +1,17 @@
+experimentName: AutoencoderOptimization
+trialConcurrency: 1
+maxTrialNumber: 1
+searchSpaceFile: search_space2.json
+tuner:
+  name: TPE
+  classArgs:
+    optimize_mode: minimize
+assessor:
+  name: Medianstop
+  classArgs:
+    optimize_mode: minimize
+trialCommand: python3 prn_tc2.py
+trialCodeDirectory: .
+trialGpuNumber: 0
+trainingService:
+  platform: local
